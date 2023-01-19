@@ -9,19 +9,98 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <!--
+    <link rel="stylesheet" href="styles.css">
+ <h1 id="title"> School Uniform Purchase</h1>
+<p id="description">
+Fill details below to complete your order
+ </p>
 
-    Hello Camper!
+<form id="survey-form">
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+ <div class="input-headings">
 
-    - The freeCodeCamp Team
+<label for ="name" id="name-label">Name</label>
+  <input id ="name" type="text" name="name" placeholder="Ben Biwott" class="form-inputs" required></input> 
+  <br>
 
-    -->
-    <script  src="js/index.js"></script>
-    <h1>Hello World! </h1>
+  <label for="email" id = "email-label">Email</label>
+  <input id ="email" type="email" name="email" placeholder="benbiwott@fboyle.com" class="form-inputs" required></input>
+  <br>
+
+  <label for="number" id="number-label">Age</label> 
+  <input id="number" type="number" name="number" min="18" max="72" placeholder="40" class="form-inputs" required</input>
+  <br>
+
+  <label for="dropdown" id="Uniformtype" style="width:90vw;" >Select order</label>
+  <select id="dropdown">
+    <option value="Sweaters">Sweaters</option>
+    <option value="Shirts">Shirts</option>
+    <option value="Skirts">Skirts</option>
+    <option value="T_shirts">T-shirts</option>
+    <option value="Games_kit">Games Kit</option>
+    </select>
+    <br>
+    <br>
+    <label for="Uniform_color" id="Uniform_color"> <b> Uniform color: <b> </label>
+    
+    <input id ="Uniform_color" type="radio" id="Blue" id="blue" name="color" value="blue">
+    <label for="Uniform_color">Blue</label>
+<br>
+    <input id ="Uniform_color" type="radio" id="green" id="green" name="color" value="green">
+    <label for="Uniform_color">Green</label>
+<br>
+    <input id ="Uniform_color" type="radio" id="black" id="black" name="color" value="black">
+    <label for="Uniform_color">Black</label>
+    <br>
+<input id ="Uniform_color" type="radio" id="red" id="red" name="color" value="red">
+    <label for="Uniform_color">Red</label>
+    <br>
+ <input id ="Uniform_color" type="radio" id="maroon" id="maroon" name="color" value="maroon">
+    <label for="Uniform_color">Maroon</label>
+<br>
+<input id ="Uniform_color" type="radio" id="navy_blue" id="navy_blue" name="color" value="navy_blue">
+<label for="Unifor_color">Navy blue </label>
+<br>
+<br>
+
+<label for ="features"> <b> Add features: <b> </label>
+<br>
+
+<input id="checkbox" type="checkbox" name="features" value="autopilot">
+<label for="checkbox">size 22</label> 
+<br>
+<input id="checkbox" type="checkbox" name="features" value="autopilot">
+<label for="checkbox">size 24</label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value="autopilot">
+<label for="checkbox">size 26</label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value="autopilot">
+<label for="checkbox">size 28</label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value="autopilot">
+<label for="checkbox">size 30</label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value="autopilot">
+<label for="checkbox">size 32</label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value="autopilot">
+<label for="checkbox">size 34</label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value="autopilot">
+<label for="checkbox">size 36</label>
+<br>
+<br>
+
+<label id="textarea"> Additional comments</label>
+<br>
+<textarea id="textarea" name="instructions" rows="5" cols="40">
+
+</textarea>
+<br>
+
+<input id="submit" type="submit" value="place order"
+
+</form>
   </body>
 </html>
